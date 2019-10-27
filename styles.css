@@ -2,7 +2,6 @@ html, body {
   height : 100%; width: 100%;
   margin : 0;
   color: #CCC;
-  overflow: hidden;
   cursor : default;
   font-family: Arial;
   font-size: 11px;
@@ -46,10 +45,10 @@ background: #1D1D1D;
 .main-wrapper{
   display: flex;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .editor{
-position: absolute;
 background-image: url(img/canvas-background-light.png);
 }
 .canvas-wrapper{
@@ -90,6 +89,10 @@ input[type="color"] {
   height: 246px;
   background-color: whitesmoke;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.select-container{
+  margin-right: 29px;
 }
 .tools-item, .colors-item, .select-item {
   font-size:16px;
