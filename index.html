@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Codejam-Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="icon" href="img/logo.png">
+    <script src="index.js" defer></script>
+</head>
+<body>
+  <div class="header-wrap">
+    <div class="navigation">
+       <span class="bars"><i class="fa fa-bars"></i></span> <span class="task-name">Codejam-Canvas</span><span class="ellipsis"><i class="fas fa-ellipsis-v"></i></span>
+    </div>
+    </div>
+    <div class="main-wrapper">
+        <div class="left-container">
+        <ul class="tools-container"> 
+           <li class="tools-item"><i class="fas fa-fill-drip"></i> Paint bucket</li>
+           <li class="tools-item"><i class="fas fa-eye-dropper"></i> Choose color</li>
+           <li class="tools-item"><i class="fas fa-arrows-alt"></i> Move</li>
+           <li class="tools-item"><i class="fas fa-exchange-alt"></i> Transform</li>
+        </ul> 
+        <ul class="colors-container"> 
+              <li class="colors-item"><i class="fas fa-circle grey"></i> Current color</li>
+              <li class="colors-item"><i class="fas fa-circle green"></i> Prev color</li>
+              <li class="colors-item"><i class="fas fa-circle red "></i> Red</li>
+              <li class="colors-item"><i class="fas fa-circle blue"></i> Blue</li>
+            </ul> 
+    </div>
+      <div class="canvas-wrapper" id="canvasContainer">
+        <canvas class="editor" id="canvas"  width="512" height="512"></canvas>
+      </div>
+      <ul class="select-container"> 
+            <li class="select-item"><button id="4">4x4</button></li>
+            <li class="colors-item"><button id="32">32x32</button></li>
+            <li class="colors-item"><button id="img">256x256</button></li>
+          </ul> 
+     
+</body>
+</html>
